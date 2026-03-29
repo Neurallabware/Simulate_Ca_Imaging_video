@@ -1,0 +1,57 @@
+{
+  "asset": "ar2exp",
+  "timestamp": "2026-03-29T04:20:42Z",
+  "status": "PASS",
+  "fixed": false,
+  "environment": {
+    "repo_root": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video",
+    "paths_added": [
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/ProgressBar",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/ProgressBar/MatlabProgressBar-master",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/ProgressBar/MatlabProgressBar-master/images",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/reports",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_logs",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/scripts",
+      "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/scripts/matlab",
+      "/home/yz/ca_pipeline/CaliAli/Other_codes",
+      "/home/yz/ca_pipeline/CaliAli/Other_codes/Vesselness_Filter",
+      "/home/yz/ca_pipeline/CaliAli/CNMF-e/OASIS_matlab/functions"
+    ],
+    "external_paths": [
+      "/home/yz/ca_pipeline/CaliAli/Other_codes",
+      "/home/yz/ca_pipeline/CaliAli/Other_codes/Vesselness_Filter",
+      "/home/yz/ca_pipeline/CaliAli/CNMF-e/OASIS_matlab/functions"
+    ],
+    "missing_external_paths": [],
+    "data_files": {
+      "A_mat": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/A.mat",
+      "A2_mat": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/A2.mat",
+      "A_CA1_mat": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/A_CA1.mat",
+      "BL_mat": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/BL.mat"
+    },
+    "function_status": {
+      "Simulate_Ca_video": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/Simulate_Ca_video.m",
+      "BL_sim": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/BL_sim.m",
+      "estimate_time_constant_PV": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/estimate_time_constant_PV.m",
+      "vesselness_PV": "/home/yz/ca_pipeline/CaliAli/Other_codes/Vesselness_Filter/vesselness_PV.m",
+      "estimate_time_constant": "/home/yz/ca_pipeline/CaliAli/CNMF-e/OASIS_matlab/functions/estimate_time_constant.m"
+    },
+    "runtime_dir": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime"
+  },
+  "payload": {
+    "class": "double",
+    "size": [
+      1,
+      2
+    ],
+    "is_complex": true,
+    "min_abs": 0.20023646563499881,
+    "max_abs": 33.517703456579994,
+    "mean_real": 16.83667919815543,
+    "mean_imag": 0.062980516644785559
+  }
+}

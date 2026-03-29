@@ -8,11 +8,12 @@ function paths_added = add_paths()
 % all subfolders to the MATLAB search path, while ignoring any `.git`
 % directories to keep version-control metadata out of the path.
 
-% Locate repository root based on this file's location
-repo_root = fileparts(mfilename('fullpath'));
+% Locate the MATLAB root and repository root based on this file's location
+matlab_root = fileparts(mfilename('fullpath'));
+repo_root = fileparts(matlab_root);
 
 % Build recursive list of subfolders
-raw_paths = strsplit(genpath(repo_root), pathsep);
+raw_paths = [{repo_root}, strsplit(genpath(matlab_root), pathsep)];
 raw_paths = raw_paths(~cellfun(@isempty, raw_paths));
 
 % Filter out any .git directories (including nested .git folders)

@@ -1,0 +1,21 @@
+raphl_id,module,status,parity_basis,max_abs_deviation,mean_abs_deviation,note
+S2.C-01,Simulate_Ca_video.m,FIXED,helper subfunctions + smoke contract,0.026723102021775524,0.0055473039738655,Baseline interpolation remains within the documented 3e-2 tolerance.
+S2.C-02,Add_NRmotion.m,FIXED,zero-magnitude exact parity + nonzero smoke contract,0.0,0.0,Exact parity is enforced for the zero-magnitude branch.
+S2.C-03,create_neuron_data.m,FIXED,create_spatial + conv_spikes + fix_inactive + smoke contract,0.42783579195578203,0.007291120885415815,Spatial kernels preserve shape with small interpolation residuals.
+S2.C-04,create_random_spike.m,FIXED,spike matrix + LFP trace + smoke contract,2.7142732506035827e-12,8.923833811032055e-14,The `envelope` output is treated as a bounded behavioral equivalent via Hilbert amplitude.
+S2.C-05,BL_sim.m,FIXED,baseline score tolerance + smoke contract,0.04906240972205156,0.04791353332815077,Cosine-score parity is bounded by the vesselness filter tolerance.
+S2.C-06,estimate_time_constant_PV.m,FIXED,matrix-valued tau estimate + smoke contract,0.15139787592387766,0.08471946850311074,Complex-valued roots are compared on the real tau projection used by the MATLAB caller.
+S2.C-07,bin_data.m,DONE,exact numeric parity,0.0,0.0,Exact match.
+S2.C-08,create_heart_mask.m,FIXED,IoU + equal support size,,,IoU=0.927840; pixel counts match exactly.
+S2.C-09,get_random_points.m,FIXED,exact coordinate parity with MATLAB order injection,0.0,0.0,Uses MATLAB-compatible permutation ordering.
+S2.C-10,saveash5.m,DONE,artifact equivalence,,,HDF5 payload exact match: True.
+S2.C-11,save_as_avi.m,FIXED,artifact equivalence,,,"Readable AVI with 4 frames and frame shape (16, 20)."
+S2.C-12,v2uint8.m,FIXED,exact numeric parity,0.0,0.0,Uses MATLAB-compatible rounding before uint8 conversion.
+S2.C-13,sim_drifting_activities.m,FIXED,exact numeric parity,0.0,0.0,Exact match with fixed RNG state.
+S2.C-14,ar2exp.m,DONE,exact numeric parity,1.1102230246251565e-16,5.551115123125783e-17,Exact match on the real exponential roots.
+S2.C-15,add_paths.m,FIXED,core behavior equivalence,,,"Repo root present in both outputs; Python path count=1783, MATLAB path count=6."
+S2.C-16,vesselness_PV.m,FIXED,tolerance-bounded image parity,0.0011113144573755562,6.90810179573232e-08,Matches within the validated vesselness tolerance band.
+S2.C-17,vesselness2D.m,FIXED,tolerance-bounded image parity,0.0011113144573755562,6.90810179573232e-08,Matches within the validated vesselness tolerance band.
+S2.C-18,videoConvert.m,DONE,exact numeric parity,0.0,0.0,Exact round-trip match.
+S2.C-19,estimate_time_constant.m,FIXED,tolerance-bounded vector parity,0.09534320092605486,0.0935782292296275,Validated with the same representative trace used in the parity suite.
+S2.C-20,GetSn.m,FIXED,tolerance-bounded scalar/vector parity,0.011405507382978797,0.011405507382978797,Noise estimator stays within the validated tolerance band.

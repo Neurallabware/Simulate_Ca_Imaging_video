@@ -1,0 +1,5 @@
+file,size_bytes,source_url,local_path,policy
+A.mat,1845795,https://github.com/vergaloy/Simulate_Ca_Imaging_video/blob/main/A.mat,/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/A.mat,repo_bundled_primary_source
+A2.mat,125658,https://github.com/vergaloy/Simulate_Ca_Imaging_video/blob/main/A2.mat,/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/A2.mat,repo_bundled_primary_source
+A_CA1.mat,259258,https://github.com/vergaloy/Simulate_Ca_Imaging_video/blob/main/A_CA1.mat,/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/A_CA1.mat,repo_bundled_primary_source
+BL.mat,5485155,https://github.com/vergaloy/Simulate_Ca_Imaging_video/blob/main/BL.mat,/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/BL.mat,repo_bundled_primary_source

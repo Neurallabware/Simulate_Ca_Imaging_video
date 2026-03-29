@@ -1,0 +1,182 @@
+[
+  {
+    "raphl_id": "S2.C-01",
+    "module": "Simulate_Ca_video.m",
+    "status": "FIXED",
+    "parity_basis": "helper subfunctions + smoke contract",
+    "max_abs_deviation": 0.026723102021775524,
+    "mean_abs_deviation": 0.0055473039738655,
+    "note": "Baseline interpolation remains within the documented 3e-2 tolerance."
+  },
+  {
+    "raphl_id": "S2.C-02",
+    "module": "Add_NRmotion.m",
+    "status": "FIXED",
+    "parity_basis": "zero-magnitude exact parity + nonzero smoke contract",
+    "max_abs_deviation": 0.0,
+    "mean_abs_deviation": 0.0,
+    "note": "Exact parity is enforced for the zero-magnitude branch."
+  },
+  {
+    "raphl_id": "S2.C-03",
+    "module": "create_neuron_data.m",
+    "status": "FIXED",
+    "parity_basis": "create_spatial + conv_spikes + fix_inactive + smoke contract",
+    "max_abs_deviation": 0.42783579195578203,
+    "mean_abs_deviation": 0.007291120885415815,
+    "note": "Spatial kernels preserve shape with small interpolation residuals."
+  },
+  {
+    "raphl_id": "S2.C-04",
+    "module": "create_random_spike.m",
+    "status": "FIXED",
+    "parity_basis": "spike matrix + LFP trace + smoke contract",
+    "max_abs_deviation": 2.7142732506035827e-12,
+    "mean_abs_deviation": 8.923833811032055e-14,
+    "note": "The `envelope` output is treated as a bounded behavioral equivalent via Hilbert amplitude."
+  },
+  {
+    "raphl_id": "S2.C-05",
+    "module": "BL_sim.m",
+    "status": "FIXED",
+    "parity_basis": "baseline score tolerance + smoke contract",
+    "max_abs_deviation": 0.04906240972205156,
+    "mean_abs_deviation": 0.04791353332815077,
+    "note": "Cosine-score parity is bounded by the vesselness filter tolerance."
+  },
+  {
+    "raphl_id": "S2.C-06",
+    "module": "estimate_time_constant_PV.m",
+    "status": "FIXED",
+    "parity_basis": "matrix-valued tau estimate + smoke contract",
+    "max_abs_deviation": 0.15139787592387766,
+    "mean_abs_deviation": 0.08471946850311074,
+    "note": "Complex-valued roots are compared on the real tau projection used by the MATLAB caller."
+  },
+  {
+    "raphl_id": "S2.C-07",
+    "module": "bin_data.m",
+    "status": "DONE",
+    "parity_basis": "exact numeric parity",
+    "max_abs_deviation": 0.0,
+    "mean_abs_deviation": 0.0,
+    "note": "Exact match."
+  },
+  {
+    "raphl_id": "S2.C-08",
+    "module": "create_heart_mask.m",
+    "status": "FIXED",
+    "parity_basis": "IoU + equal support size",
+    "max_abs_deviation": null,
+    "mean_abs_deviation": null,
+    "note": "IoU=0.927840; pixel counts match exactly."
+  },
+  {
+    "raphl_id": "S2.C-09",
+    "module": "get_random_points.m",
+    "status": "FIXED",
+    "parity_basis": "exact coordinate parity with MATLAB order injection",
+    "max_abs_deviation": 0.0,
+    "mean_abs_deviation": 0.0,
+    "note": "Uses MATLAB-compatible permutation ordering."
+  },
+  {
+    "raphl_id": "S2.C-10",
+    "module": "saveash5.m",
+    "status": "DONE",
+    "parity_basis": "artifact equivalence",
+    "max_abs_deviation": null,
+    "mean_abs_deviation": null,
+    "note": "HDF5 payload exact match: True."
+  },
+  {
+    "raphl_id": "S2.C-11",
+    "module": "save_as_avi.m",
+    "status": "FIXED",
+    "parity_basis": "artifact equivalence",
+    "max_abs_deviation": null,
+    "mean_abs_deviation": null,
+    "note": "Readable AVI with 4 frames and frame shape (16, 20)."
+  },
+  {
+    "raphl_id": "S2.C-12",
+    "module": "v2uint8.m",
+    "status": "FIXED",
+    "parity_basis": "exact numeric parity",
+    "max_abs_deviation": 0.0,
+    "mean_abs_deviation": 0.0,
+    "note": "Uses MATLAB-compatible rounding before uint8 conversion."
+  },
+  {
+    "raphl_id": "S2.C-13",
+    "module": "sim_drifting_activities.m",
+    "status": "FIXED",
+    "parity_basis": "exact numeric parity",
+    "max_abs_deviation": 0.0,
+    "mean_abs_deviation": 0.0,
+    "note": "Exact match with fixed RNG state."
+  },
+  {
+    "raphl_id": "S2.C-14",
+    "module": "ar2exp.m",
+    "status": "DONE",
+    "parity_basis": "exact numeric parity",
+    "max_abs_deviation": 1.1102230246251565e-16,
+    "mean_abs_deviation": 5.551115123125783e-17,
+    "note": "Exact match on the real exponential roots."
+  },
+  {
+    "raphl_id": "S2.C-15",
+    "module": "add_paths.m",
+    "status": "FIXED",
+    "parity_basis": "core behavior equivalence",
+    "max_abs_deviation": null,
+    "mean_abs_deviation": null,
+    "note": "Repo root present in both outputs; Python path count=1783, MATLAB path count=6."
+  },
+  {
+    "raphl_id": "S2.C-16",
+    "module": "vesselness_PV.m",
+    "status": "FIXED",
+    "parity_basis": "tolerance-bounded image parity",
+    "max_abs_deviation": 0.0011113144573755562,
+    "mean_abs_deviation": 6.90810179573232e-08,
+    "note": "Matches within the validated vesselness tolerance band."
+  },
+  {
+    "raphl_id": "S2.C-17",
+    "module": "vesselness2D.m",
+    "status": "FIXED",
+    "parity_basis": "tolerance-bounded image parity",
+    "max_abs_deviation": 0.0011113144573755562,
+    "mean_abs_deviation": 6.90810179573232e-08,
+    "note": "Matches within the validated vesselness tolerance band."
+  },
+  {
+    "raphl_id": "S2.C-18",
+    "module": "videoConvert.m",
+    "status": "DONE",
+    "parity_basis": "exact numeric parity",
+    "max_abs_deviation": 0.0,
+    "mean_abs_deviation": 0.0,
+    "note": "Exact round-trip match."
+  },
+  {
+    "raphl_id": "S2.C-19",
+    "module": "estimate_time_constant.m",
+    "status": "FIXED",
+    "parity_basis": "tolerance-bounded vector parity",
+    "max_abs_deviation": 0.09534320092605486,
+    "mean_abs_deviation": 0.0935782292296275,
+    "note": "Validated with the same representative trace used in the parity suite."
+  },
+  {
+    "raphl_id": "S2.C-20",
+    "module": "GetSn.m",
+    "status": "FIXED",
+    "parity_basis": "tolerance-bounded scalar/vector parity",
+    "max_abs_deviation": 0.011405507382978797,
+    "mean_abs_deviation": 0.011405507382978797,
+    "note": "Noise estimator stays within the validated tolerance band."
+  }
+]

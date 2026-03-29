@@ -1,1 +1,8 @@
 Simulate_Ca_video.asv
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv*/
+*.egg-info/
+artifacts/runtime/*.avi
+artifacts/runtime/*.h5

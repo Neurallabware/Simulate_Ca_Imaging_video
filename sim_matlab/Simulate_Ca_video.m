@@ -269,7 +269,7 @@ end
 function bl=create_baseline(opt)
 comb_fact=1-opt.comb_fact;
 ses=opt.ses;
-load('BL.mat','Mr');
+load(resolve_repo_data_file('BL.mat'),'Mr');
 
 if length(opt.B)==1
     Mr=Mr{opt.B,1};

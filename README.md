@@ -4,7 +4,20 @@ This project provides a MATLAB function `Simulate_Ca_video` to simulate calcium 
 
 ## Quick Start
 
-To get started, you can call the function with default or customized parameters:
+The MATLAB source tree now lives under `sim_matlab/`. From the repository root, add it to the MATLAB path before calling any functions:
+
+```matlab
+addpath(genpath(fullfile(pwd, 'sim_matlab')));
+```
+
+The bundled `.mat` assets now live under `data/`:
+
+- `data/A.mat`
+- `data/A2.mat`
+- `data/A_CA1.mat`
+- `data/BL.mat`
+
+The MATLAB and Python loaders resolve those files automatically. Then call the simulator with default or customized parameters:
 
 ```matlab
 [Mot, outpath, file_name, A, GT_motion_xy] = Simulate_Ca_video('Nneu', 100, 'ses', 2, 'CA1_A', true, 'PNR', 1);
@@ -13,6 +26,15 @@ To get started, you can call the function with default or customized parameters:
 The final output `GT_motion_xy` stores per-session x/y displacements applied within each session and is also written to the metadata file when saving results.
 
 For detailed information on each parameter and sub-function, please refer to the [Function Documentation](#function-documentation) section.
+
+## Repository Layout
+
+- `sim_matlab/`: MATLAB source files and the vendored MATLAB progress-bar dependency
+- `data/`: bundled MATLAB footprint and baseline assets (`A.mat`, `A2.mat`, `A_CA1.mat`, `BL.mat`)
+- `sim_matlab/scripts/`: MATLAB reproduction and parity helpers
+- `src/simulate_ca_imaging_video/`: Python port
+- `output/jupyter-notebook/`: executed visualization notebook artifacts
+- `artifacts/`: reproduction logs, reports, and parity comparison assets
 
 ## Function Documentation
 

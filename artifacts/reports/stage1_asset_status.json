@@ -1,0 +1,92 @@
+{
+  "Add_NRmotion": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/Add_NRmotion.json"
+  },
+  "BL_sim": {
+    "launcher_status": "PASS",
+    "final_status": "FIXED",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/BL_sim.json"
+  },
+  "Simulate_Ca_video": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/Simulate_Ca_video.json"
+  },
+  "add_paths": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/add_paths.json"
+  },
+  "ar2exp": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/ar2exp.json"
+  },
+  "bin_data": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/bin_data.json"
+  },
+  "create_heart_mask": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/create_heart_mask.json"
+  },
+  "create_neuron_data": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/create_neuron_data.json"
+  },
+  "create_random_spike": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/create_random_spike.json"
+  },
+  "estimate_time_constant_PV": {
+    "launcher_status": "PASS",
+    "final_status": "FIXED",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/estimate_time_constant_PV.json"
+  },
+  "get_random_points": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/get_random_points.json"
+  },
+  "save_as_avi": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/save_as_avi.json"
+  },
+  "saveash5": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/saveash5.json"
+  },
+  "sim_drifting_activities": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/sim_drifting_activities.json"
+  },
+  "v2uint8": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_assets/v2uint8.json"
+  },
+  "README_example_1": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_examples/README_example_1.json"
+  },
+  "README_example_2": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_examples/README_example_2.json"
+  },
+  "README_example_3": {
+    "launcher_status": "PASS",
+    "final_status": "PASS",
+    "json_path": "/home/yz/ca_pipeline/Simulate_Ca_Imaging_video/artifacts/runtime/stage1_examples/README_example_3.json"
+  }
+}

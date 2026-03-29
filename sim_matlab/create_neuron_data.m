@@ -41,11 +41,11 @@ function [Aout,bA]=create_spatial(BW,opt)
 [y, x] = find(BW);
 [X,Y]=get_random_points(x,y,opt.min_dist,opt.Nneu,opt.plotme);
 if opt.CA1_A
-    load('A_CA1.mat');
+    load(resolve_repo_data_file('A_CA1.mat'));
 elseif opt.A2
-    load('A2.mat');
+    load(resolve_repo_data_file('A2.mat'));
 else
-    load('A.mat');
+    load(resolve_repo_data_file('A.mat'));
 end
 N=size(X,2);
 
@@ -117,7 +117,6 @@ for i=1:size(in,1)
     S(in(i),randi(d,1))=1;
 end
 end
-
 
 
 
