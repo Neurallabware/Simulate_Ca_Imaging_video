@@ -1,0 +1,27 @@
+{
+  "repository": "Neurallabware/Simulate_Ca_Imaging_video",
+  "scientific_source_commit": "d4c71278fc347521a1899d0db6c97bc99d426248",
+  "reviewed_on": "2026-10-21",
+  "references": [
+    {
+      "path": "README.md",
+      "sha": "977c59c3b51d2ddf92308cb96423885dc674d677",
+      "inspected": true
+    },
+    {
+      "path": "pyproject.toml",
+      "sha": "818304128cf1abda6142ba80a89cddcc22c15b9c",
+      "inspected": true
+    },
+    {
+      "path": "src/simulate_ca_imaging_video/simulate_ca_video.py",
+      "sha": "9f38511a056a49e57c301f7952584568395f987e",
+      "inspected": true
+    },
+    {
+      "path": "src/simulate_ca_imaging_video/__init__.py",
+      "sha": "0093b7cfc05fc3f28d4dba7f72a240456217b921",
+      "inspected": true
+    }
+  ]
+}
