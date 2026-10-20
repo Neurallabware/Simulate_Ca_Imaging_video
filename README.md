@@ -128,3 +128,12 @@ Adds non-rigid misalignment artifacts across sessions.
 
 ### saveash5
 Saves data in HDF5 format.
+
+## Documentation
+
+See the [user guide](docs/index.md) for prerequisites, current entry points, input/output contracts, and validation scope. Build the documentation independently of the scientific runtime with:
+
+```bash
+python -m pip install -r docs/requirements.txt
+python -m sphinx -b html -n -W --keep-going docs docs/_build/html
+```
